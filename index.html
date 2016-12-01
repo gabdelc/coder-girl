@@ -5,31 +5,39 @@
 	<title>Coder Girl</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="css/jquery.js"></script>
+	<script src="css/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-     <header>
-        <div class="navbar">
-            <a href="" class="boton-menu"><span class="icon-menu"></span>Menu</a>
-        </div>
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-2">
-	                <span class="">Code Girls</span>
-	            </div>
-	            <div class="col-md-10">
-	                <ul class="list-nav list-inline">
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Documental</a></li>
-                        <li><a href="">Hackathon</a></li>
-                        <li><a href="">Contacto</a></li>
-	                </ul>
-	            </div>
-	        </div>
-	    </div>
-	</header>
-<!-- -------------------------------------------------------------------------------- HERO -->
-    <section class="hero">
+   <header>
+    <div class="container">
+         <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-------------------Button desplegable----------------------------------------->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-but">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Code Girls</a>
+            </div>
+            <!----------------menu---------------------------------------------------->
+            <div class="collapse navbar-collapse" id="navbar-but">
+                <ul class="nav navbar-nav pull-right "  aria-expanded="false">
+                    <li class="active "><a href="#inicio">Inicio<span class="sr-only"></span></a></li>
+                    <li><a href="#documental">Documental</a></li>
+                    <li><a href="#hackathon">Hackathon</a></li>
+                    <li><a href="#contacto1">Contacto</a></li>
+                </ul>  
+            </div>
+            </div>
+        </nav>
+    </div>  
+</header>
+     <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -60,7 +68,6 @@
 	        </div>
 	    </div>
 	</section>
-<!-- ------------------------------------------------------------------------------ HACKATHON -->
 	<section class="hackathon">
 	    <div class="container">
 	        <div class="col-md-6">
@@ -74,7 +81,6 @@
 	        </div>
 	    </div>
 	</section>
-<!-- ------------------------------------------------------------------------------ CONTACTO -->
 	<section class="contacto">
 	    <div class="container">
 	        <div class="row">
@@ -95,18 +101,18 @@
 	                    <div class="form-group">
                             <input type="text" class="form-control" placeholder="Asunto"></div>
                         <div class="form-group">
-                            <textarea name="" id="" placeholder="Mensaje"></textarea></div>
+                            <textarea name="" id="" rows="10" placeholder="Mensaje"></textarea></div>
 	                </form>
 	                <button class="btn btn-primary">Enviar</button>
 	            </div>
 	        </div>
 	    </div>
 	</section>
-<!-- ------------------------------------------------------------------------------ FOOTER -->
+
 	<footer>
 	    <div class="container">
             <small>©2016 Code Girl. Diseñado por </small>
-            <span class="yellow">Laboratoria</span>
+            <span id="naranja">Laboratoria</span>
 	    </div>
 	</footer>
 	

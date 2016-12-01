@@ -1,5 +1,4 @@
 * {
-    outline: 1px solid #63e563;
     margin: 0;
     padding: 0;
 }
@@ -11,47 +10,30 @@ h3 {
     text-align: center;
     padding: 20px 0;
 }
-/*------------------------------------------------------------------------------ HEADER --*/
+
 header {
     background: #f2f2f2;
-    padding: 13px 0;
-}
-header .nav-menu {
-    list-style: none;
-    text-align: right;
-    margin: 0;
+    padding: 2% 0;
 }
 
-.list-nav li a {
-     color: #000;
-}
-.list-nav li a:hover {
-    background: #ccc;
-    text-decoration: none;
-}
-.navbar {
-    display: none;
-}
-/*-------------------------------------------------------------------------------- HERO --*/
+
+
+/* --- fin header ----------------------------------------*/
 .hero {
     background: url(../img/home.jpg) no-repeat;
-    background-attachment: scroll;
     background-size: cover;
     background-position: top;
-    height: 500px;
+    height: 400px;
 }
-
 .portada {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 30%;
+   text-align: center;
+    margin-top: 20%;
+    
 }
 .portada h1 {
-    padding-top: 0;
-    color: #fff;
+      color: #fff;
 }
-/*-------------------------------------------------------------------------- DOCUMENTAL --*/
+/* --- fin hero ----------------------------------------*/
 .documental {
     margin: 80px 0 40px 0;
 }
@@ -59,12 +41,12 @@ header .nav-menu {
     text-align: center;
     padding: 30px 0;
 }
-/*--------------------------------------------------------------------------- HACKATHON --*/
+/* --- fin HACKATHON  ----------------------------------------*/
 .hackathon {
     background: yellow;
     padding: 40px 0;
 }
-/*---------------------------------------------------------------------------- CONTACTO --*/
+/*---------------------fin  CONTACTO -----------------------*/
 .contacto {
     margin: 80px 0 50px 0;
 }
@@ -84,7 +66,7 @@ header .nav-menu {
     max-width: 100%;
     min-width: 100%;
 }
-/*------------------------------------------------------------------------------ FOOTER --*/
+/*--------------- fin FOOTER --------------------------*/
 footer {
     background: #4697bc;
     padding: 20px 0 30px 0;
@@ -92,65 +74,8 @@ footer {
 footer small {
     color: #fff;
 }
-.yellow {
-    color: yellow;
+#naranja {
+    color: #edce23;
     font-size: 12px;
 }
 
-----------------------------------------------------------------------------------------
-
-@media screen and (max-width:1000px) {
-    .list-inline {
-        display: none;
-    }
-    .fondo .menu .icon-menu {
-        display: inline-block;
-        float: right;
-        font-size: 30px;
-    }
-    .fondo .menu img {
-        display: inline-block;
-        margin: 0;
-    }
-    .fondo header .banner {
-        height: 180px;
-    }
-    .fondo .banner .col-md-4 {
-        display: block;
-        text-align: center;
-    }
-    .fondo .banner button {
-        margin: 0;
-    }
-    .fondo header .menu {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width:700px) {
-    footer .banner .col-sm-7 {
-        display: block;
-        margin: 0;
-    }
-    footer .banner .col-sm-7 h3 {
-        margin: 0;
-    }
-    footer .banner {
-        text-align: center;
-    }
-    footer .banner .col-sm-4 button {
-        margin:0;
-    }
-}
-    
-@media screen and (max-width:600px) {
-    .fondo header .frase h1 {
-        padding: 0;
-    }
-    .container {
-        width: 100%;
-    }
-    .fondo header .frase {
-        width: 100%;
-    }
-}
